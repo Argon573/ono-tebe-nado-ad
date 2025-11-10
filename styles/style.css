@@ -1,4 +1,4 @@
-header {
+header{
     display: flex;
     width: 100%;
     height: 293px;
@@ -9,8 +9,9 @@ header {
     position: relative;
 }
 
-.navbar {
+.navbar{
     width: 391.48px;
+    height: 22px;
     display: flex;
     align-items: center;
     font-weight: 400;
@@ -20,7 +21,7 @@ header {
     margin-left: 50px;
 }
 
-.list__nav {
+.list__nav{
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -28,21 +29,22 @@ header {
     list-style-type: circle;
 }
 
-.main__anchor {
+.main__anchor{
     text-decoration: none;
 }
 
-.logo {
+.logo{
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
     width: 148px;
     height: 105px;
 }
 
-.contacts {
+.contacts{
     display: flex;
     width: 240px;
+    height: 98px;
     font-family: Raleway;
     font-weight: 400;
     font-size: 18px;
@@ -51,27 +53,30 @@ header {
     margin-right: 50px;
 }
 
-.baner__section {
+.baner__section{
     background-image: url('../images/cover.jpg');
     background-size: cover;
     height: 757px;
     position: relative;
 }
 
-.back-opac {
+.back-opac{
     position: absolute;
     inset: 0;
+    width: 100%;
+    height: 100%;
     background-color: #1b1919;
     opacity: 0.6;
     z-index: 1;
 }
 
-.container {
+.container{
+    height: 385px;
     width: 1000px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Идеальное центрирование */
     display: flex;
     flex-direction: column;
     font-weight: 700;
@@ -81,20 +86,37 @@ header {
     letter-spacing: 0.3em;
     z-index: 2;
 }
+.ono{
+    display: flex;
+}
 
-.baner__footer {
+.tebe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nado{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.baner__footer{
     position: absolute;
     left: 50px;
     bottom: 50px;
     width: 1000px;
+    height: 51px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
 }
 
-.baner__text {
+.baner__text{
     width: 637px;
+    height: 28px;
     font-family: Raleway;
     font-weight: 400;
     font-size: 22px;
@@ -105,7 +127,7 @@ header {
     color: #ffffff;
 }
 
-.baner__button {
+.baner__button{
     background: none;
     font-family: Raleway;
     font-weight: 500;
@@ -120,10 +142,11 @@ header {
 
 .lots__section {
     background-color: #FFFFFF;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 963px;
+    min-height: 963px; /* или без height */
 }
 
 .lots__box {
@@ -138,13 +161,14 @@ header {
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
 }
 
 .lots {
     display: grid;
     grid-template-columns: repeat(3, 334px);
     gap: 24.5px;
+    height: 649px;
 }
 
 .lot {
@@ -153,16 +177,19 @@ header {
     flex-direction: column;
     background-size: cover;
     background-position: center;
+    z-index: 0;
 }
 
 .lot__title {
     width: 254px;
+    max-height: 360px;
     margin: 48px auto;
     font-family: Raleway;
     font-weight: 700;
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: underline;
+    text-decoration-style: solid;
     color: #ffffff;
     z-index: 2;
 }
@@ -172,50 +199,69 @@ header {
     margin: auto 48px 48px 48px;
     display: flex;
     justify-content: flex-end;
+    z-index: 2;
     font-family: Raleway;
     font-weight: 400;
     font-size: 20px;
     color: #ffffff;
-    z-index: 2;
 }
 
-.first {
+.first{
     background-image: url('../images/card-lot-01.jpg');
 }
 
-.second {
+.second{
     background-image: url('../images/card-lot-02.jpg');
 }
 
-.third {
+.third{
     background-image: url('../images/card-lot-03.jpg');
 }
 
-.about__section {
+.view__more{
+    margin-left: 40px   ;
+}
+
+.about__section{
+    position: relative;
     height: 835px;
+    width: 100%;
     background-color: #FFFFFF;
 }
 
-.about__box {
+.about__box{
     width: 1052px;
-    margin: 0 auto 180px;
+    height: 595px;
+    margin: 0px auto 180px;
     padding-top: 60px;
     display: grid;
     grid-template-columns: 287px 693px;
     column-gap: 72px;
 }
 
-.about__img {
+.about__circle {
     width: 240px;
     height: 240px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 35px 0 320px 47px;
 }
 
-.about__block {
+.about__logo {
+    width: auto;
+    height: auto;
+    max-width: 180px;
+    max-height: 180px;
+}
+.about__block{
     margin-top: 133px;
 }
 
-.about__titile {
+.about__titile{
+    display: block;
     font-family: Raleway;
     font-weight: 700;
     font-size: 40px;
@@ -223,7 +269,7 @@ header {
     margin-bottom: 100px;
 }
 
-.about__text {
+.about__text{
     display: grid;
     grid-template-rows: 120px 168px;
     font-family: Raleway;
@@ -233,14 +279,14 @@ header {
     row-gap: 24px;
 }
 
-footer {
+footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 180px;
     background-color: #FFFFFF;
 }
 
-.contacts__footer {
+.contacts__footer{
     margin-left: 50px;
     font-family: Raleway;
     font-weight: 400;
@@ -248,17 +294,17 @@ footer {
     line-height: 24.3px;
 }
 
-.contacts__list {
+.contacts__list{
     list-style: none;
 }
 
-.cnt:nth-child(-n+2) {
+.cnt:nth-child(-n+2){
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
 }
 
-.anchors {
+.anchors{
     justify-self: center;
     font-family: Raleway;
     font-weight: 400;
@@ -266,20 +312,26 @@ footer {
     text-align: center;
 }
 
-.footer__main__anchor,
-.footer__lots__anchor,
-.footer__about__anchor {
+.footer__main__anchor{
     text-decoration: none;
     display: block;
 }
 
-.icons {
+.footer__lots__anchor{
+    display: block;
+}
+
+.footer__about__anchor{
+    display: block;
+}
+
+.icons{
     display: flex;
     justify-content: center;
     gap: 48px;
 }
 
-.icons img {
+.icons img{
     width: 48px;
     height: 48px;
 }
