@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     width: 100%;
     height: 293px;
@@ -9,7 +9,7 @@ header{
     position: relative;
 }
 
-.navbar{
+.navbar {
     width: 391.48px;
     height: 22px;
     display: flex;
@@ -21,7 +21,7 @@ header{
     margin-left: 50px;
 }
 
-.list__nav{
+.list__nav {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -29,19 +29,20 @@ header{
     list-style-type: circle;
 }
 
-.main__anchor{
+.main__anchor {
     text-decoration: none;
 }
 
-.logo{
+.logo {
     position: absolute;
+    top: 92px;
     left: 50%;
     transform: translate(-50%);
     width: 148px;
     height: 105px;
 }
 
-.contacts{
+.contacts {
     display: flex;
     width: 240px;
     height: 98px;
@@ -53,56 +54,58 @@ header{
     margin-right: 50px;
 }
 
-.baner__section{
+.baner__section {
     background-image: url('../images/cover.jpg');
     background-size: cover;
     height: 757px;
     position: relative;
 }
 
-.back-opac{
+.back-opac {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    background-color: #1b1919;
+    background-color: #000000;
     opacity: 0.6;
     z-index: 1;
 }
 
-.container{
-    height: 385px;
-    width: 1000px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Идеальное центрирование */
-    display: flex;
-    flex-direction: column;
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 100px;
     color: #ffffff;
-    letter-spacing: 0.3em;
     z-index: 2;
-}
-.ono{
-    display: flex;
-}
-
-.tebe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Raleway;
+    line-height: 114.99999999999999%;
+    letter-spacing: 0.264em;
+    text-align: right;
 }
 
-.nado{
-    display: flex;
-    justify-content: end;
-    align-items: end;
+.ono {
+    position: absolute;
+    top: 165px;
+    left: 50px;
 }
 
-.baner__footer{
+.tebe {
+    position: absolute;
+    top: 300px;
+    right: 380px;
+    left: 380px;
+}
+
+.nado {
+    position: absolute;
+    right: 50px;
+    bottom: 207px;
+}
+
+.baner__footer {
     position: absolute;
     left: 50px;
     bottom: 50px;
@@ -114,20 +117,20 @@ header{
     z-index: 2;
 }
 
-.baner__text{
+.baner__text {
     width: 637px;
     height: 28px;
     font-family: Raleway;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    word-spacing: 2px;
+    word-spacing: 4.2px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #ffffff;
 }
 
-.baner__button{
+.baner__button {
     background: none;
     font-family: Raleway;
     font-weight: 500;
@@ -146,7 +149,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 963px; /* или без height */
+    min-height: 963px;
 }
 
 .lots__box {
@@ -157,6 +160,7 @@ header{
 }
 
 .lots__title {
+    margin-left: 40px;
     font-family: Raleway;
     font-weight: 700;
     font-size: 40px;
@@ -206,30 +210,31 @@ header{
     color: #ffffff;
 }
 
-.first{
+.first {
     background-image: url('../images/card-lot-01.jpg');
 }
 
-.second{
+.second {
     background-image: url('../images/card-lot-02.jpg');
 }
 
-.third{
+.third {
     background-image: url('../images/card-lot-03.jpg');
 }
 
-.view__more{
-    margin-left: 40px   ;
+.view__more {
+    margin-left: 40px;
+    font-size: 20px;
 }
 
-.about__section{
+.about__section {
     position: relative;
     height: 835px;
     width: 100%;
     background-color: #FFFFFF;
 }
 
-.about__box{
+.about__box {
     width: 1052px;
     height: 595px;
     margin: 0px auto 180px;
@@ -251,16 +256,14 @@ header{
 }
 
 .about__logo {
-    width: auto;
-    height: auto;
-    max-width: 180px;
-    max-height: 180px;
+    width: 148px;
+    height: 114px;
 }
-.about__block{
+.about__block {
     margin-top: 133px;
 }
 
-.about__titile{
+.about__titile {
     display: block;
     font-family: Raleway;
     font-weight: 700;
@@ -269,7 +272,7 @@ header{
     margin-bottom: 100px;
 }
 
-.about__text{
+.about__text {
     display: grid;
     grid-template-rows: 120px 168px;
     font-family: Raleway;
@@ -279,14 +282,14 @@ header{
     row-gap: 24px;
 }
 
-footer{
+footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 180px;
     background-color: #FFFFFF;
 }
 
-.contacts__footer{
+.contacts__footer {
     margin-left: 50px;
     font-family: Raleway;
     font-weight: 400;
@@ -294,17 +297,17 @@ footer{
     line-height: 24.3px;
 }
 
-.contacts__list{
+.contacts__list {
     list-style: none;
 }
 
-.cnt:nth-child(-n+2){
+.cnt:nth-child(-n+2) {
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
 }
 
-.anchors{
+.anchors {
     justify-self: center;
     font-family: Raleway;
     font-weight: 400;
@@ -312,26 +315,26 @@ footer{
     text-align: center;
 }
 
-.footer__main__anchor{
+.footer__main__anchor {
     text-decoration: none;
     display: block;
 }
 
-.footer__lots__anchor{
+.footer__lots__anchor {
     display: block;
 }
 
-.footer__about__anchor{
+.footer__about__anchor {
     display: block;
 }
 
-.icons{
+.icons {
     display: flex;
     justify-content: center;
     gap: 48px;
 }
 
-.icons img{
+.icons img {
     width: 48px;
     height: 48px;
 }
